@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jasa Edit Desain</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #ffe6ff);
+                 
+      margin: 0;
+      color: #333;
+    }
+ body {
+  background: linear-gradient(#ffe6f000, #ffe6ff00),  
+              url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+    header {
+      background: #f9b8d0;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #4d2c3d;
+      border-bottom: 2px solid #f397c0;
+      position: relative;
+    }
+
+    .header-logo {
+      width: 60px;
+      height: auto;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+
+    .welcome {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+   .card {
+  background: #ecd1da;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #b18298;
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #d63384;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .card img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+
+    .card .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .card .btn {
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .btn-order {
+      background-color: #ffa2b9;
+    }
+
+    .btn-order:hover {
+      background-color: #f397c0;
+    }
+
+    .btn-detail {
+      background-color: #ffa2b9;
+    }
+
+    .btn-detail:hover {
+      background-color: #ffa2b9;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 2rem;
+    }
+.telegram-channel {
+  border: 2px dashed #f397c0;
+  border-radius: 15px;
+  background-color: #fff0f7;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.telegram-channel h3 {
+  margin-bottom: 0.5rem;
+  color: #d63384;
+}
+.telegram-channel p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.card:hover {
+  animation: bounce 0.6s ease-in-out;
+}
+
+    @media (max-width: 600px) {
+      .card .buttons {
+        flex-direction: column;
+      }
+
+      .header-logo {
+        position: static;
+        display: block;
+        margin: 0 auto 1rem;
+      }
+    }
+    .telegram-channel {
+  border: 3px dashed #f397c0;
+  background-color: #ffe4f0;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2.5rem auto;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.telegram-channel h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #d63384;
+}
+
+.telegram-channel p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+.btn-channel {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #d63384;
+  background: linear-gradient(to right, #ffb6d9, #fcd1ec);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-channel:hover {
+  background: linear-gradient(to right, #fcd1ec, #ffb6d9);
+  box-shadow: 0 6px 20px rgba(214, 51, 132, 0.4);
+  transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.floating-testi-container {
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  z-index: 999;
+}
+
+.floating-testi {
+  background-color: #ffe4f0;
+  border: 2px dashed #f397c0;
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  color: #d63384;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  animation: floatUpDown 3s ease-in-out infinite, fade 0.5s ease;
+  max-width: 200px;
+  line-height: 1.4;
+}
+.testimonial-banner {
+  text-align: center;
+  background: #fff0f7;
+  padding: 2rem 1rem;
+  margin: 3rem 0;
+  border-top: 3px dashed #f397c0;
+  border-bottom: 3px dashed #f397c0;
+}
+
+.testimonial-banner h2 {
+  color: #d63384;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.testimonial-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.testimonial-slider-horizontal {
+  width: 250px;
+  height: 360px;
+  overflow: hidden;
+  margin: 2rem auto;
+  border: 3px solid #f397c0;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-track {
+  display: flex;
+  width: fit-content;
+  transition: transform 0.6s ease-in-out;
+}
+
+.testimonial-track img {
+  width: 250px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+
+    <div class="welcome">WELCOME TO</div>
+      <img src="logo.jpg" 
+       alt="w" 
+       style="max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h1>☆⸝⸝ jasa edit ☁️✨</h1>
+    <p>୨❤︎ ໋ やあ、こんにちは！please take a look at this editing-desk of a fairy-godmother; marked, "𝑆𝑡𝑜𝑟𝑒 𝑏𝑦 𝑌𝑜𝑟𝑖𝑛𝑜𝑜𝑛𝑎". 📜💬 sila mampir pada sprinkle-sprinkle yang ia tabur; banyak promo dan bisa edit apapun; she goes all in! 🧚🏻‍♀️ catch her do to the dm. 💌</p>
+  </header>
+    <section class="telegram-channel">
+  <h3>Gabung juga ke Channel Telegram kami!</h3>
+  <p>Dapatkan info promo, contoh desain, dan update terbaru langsung dari kami 💌</p>
+  <a href="https://t.me/yorinoonachannel" class="btn-channel" target="_blank">
+  💬 Buka Channel Telegram
+</a>
+
+</section>
+<div class="floating-testi-container">
+  <div class="floating-testi" id="testiBox">
+    <p id="testiText">“Desainnya lucuu banget 😍 Thank you kak!”</p>
+  </div>
+</div>
+
+
+
+
+  <section class="services">
+    <div class="card">
+      <h3>📦 Paket Lengkap Feeds Database</h3>
+      <img src="1.jpg" alt="Feeds Database">
+      <p><strong> LENGKAP DATABASE CUMA 25K AJA DAPET FEED+SOROTAN+SAMPUL SOROTAN+FREE LOGO‼️</strong></p>
+     
+<p> 📎 materi dari sini</p>
+        📎 bisa request background & emoji
+<p> 📎 jasa posting 3,5k—5k</p>
+      <div class="buttons">
+        <a href="https://t.me/yorinoonachannel/118?single" class="btn btn-order">Pesan Sekarang</a>
+        <a href="https://t.me/yorinoonachannel/118?single" class="btn btn-detail">Penjelasan Lengkap</a>
+      </div>
+    </div>
+  <div class="card">
+      <h3>🗂️ 𝐏𝐚𝐤𝐞𝐭 𝐇𝐞𝐦𝐚𝐭 𝐅𝐞𝐞𝐝𝐬 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞</h3>
+       <img src="6.jpg" alt="Feeds Database">
+      <p>𖠗  𓄹⋆ ੈ✩₊ 𝑻𝒆𝒓𝒅𝒊𝒓𝒊 𝒂𝒕𝒂𝒔:</p>
+      🥨𝟕 𝑭𝒆𝒆𝒅𝒔
+<p>𝟷 𝚏𝚎𝚎𝚍𝚜 𝚙𝚎𝚗𝚓𝚎𝚕𝚊𝚜𝚊𝚗</p>
+𝟹 𝚏𝚎𝚎𝚍𝚜 𝚊𝚕𝚊𝚜𝚊𝚗 𝚑𝚊𝚛𝚞𝚜 𝚓𝚘𝚒𝚗
+<p>𝟹 𝚏𝚎𝚎𝚍𝚜 𝚔𝚊𝚝𝚊-𝚔𝚊𝚝𝚊 𝚖𝚘𝚝𝚒𝚟𝚊𝚜i</p>
+🥨𝟏𝟒 𝑷𝒐𝒔𝒕𝒊𝒏𝒈𝒂𝒏 𝑺𝒘𝒊𝒑𝒆 (𝒔𝒍𝒊𝒅𝒆)
+<p>𝟹 𝚙𝚎𝚗𝚓𝚎𝚕𝚊𝚜𝚊𝚗</p>
+𝟸 𝚙𝚘𝚜𝚝𝚎𝚛 𝚙𝚛𝚘𝚖𝚘𝚜𝚒
+<p>𝟻 𝚌𝚊𝚛𝚊 𝚖𝚎𝚗𝚊𝚛𝚒𝚔 𝚌𝚞𝚜𝚝𝚘𝚖𝚎𝚛</p>
+𝟺 𝚛𝚎𝚖𝚒𝚗𝚍𝚎𝚛 𝚞𝚗𝚝𝚞𝚔 𝚙𝚊𝚛𝚊 𝚌𝚞𝚜𝚝𝚘𝚖𝚎r
+<p>💗>> 𝐇𝐀𝐑𝐆𝐀 𝟏𝟓.𝟎𝟎𝟎</p>
+      <div class="buttons">
+        <a href="https://t.me/yorinoonachannel/36" class="btn btn-order">Pesan Sekarang</a>
+        <a href="https://t.me/yorinoonachannel/36" class="btn btn-detail">Penjelasan Lengkap</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>🎨 Logo Design</h3>
+       <img src="2.jpg" alt="Feeds Database">
+      <p>𝑩𝒊𝒔𝒂 𝒓𝒆𝒒𝒖𝒆𝒔𝒕:</p>
+
+<p> ⡾ 🍰 𝑬𝒎𝒐𝒋𝒊</p>
+
+<p> ⡾ 🍰 𝑾𝒂𝒓𝒏𝒂</p>
+
+<p> ⡾ 🍰 𝑩𝒂𝒄𝒌𝒈𝒓𝒐𝒖𝒏𝒅</p>
+
+💸𝗳𝗲𝗲 𝘀𝘁𝗮𝗿𝘁 𝟯𝗸
+
+<p>︶︶︶︶︶︶︶︶︶</p>
+      <div class="buttons">
+        <a href="https://t.me/yorinoonachannel/26?single" class="btn btn-order">Pesan Sekarang</a>
+        <a href="https://t.me/yorinoonachannel/26?single" class="btn btn-detail">Penjelasan Lengkap</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>💸 QRIS Deco (Custom)</h3>
+       <img src="3.jpg" alt="Feeds Database">
+      <p>♬ ˖ ࣪  🪽 𝖧𝖺𝗂, 𝗃𝗂𝗐𝖺 𝗆𝖺𝗇𝗂𝗌 𝖽𝗎𝗇𝗂𝖺 𝗌𝗂𝗁𝗂𝗋~ 𝖡𝗈𝗌𝖺𝗇𝗄𝖺𝗁 𝗄𝖺𝗎 𝗆𝖾𝗅𝗂𝗁𝖺𝗍 𝖰𝖱-𝗆𝗎 𝗒𝖺𝗇𝗀 𝖻𝖾𝗇𝗍𝗎𝗄𝗇𝗒𝖺 𝖻𝖾𝗀𝗂𝗍𝗎-𝖻𝖾𝗀𝗂𝗍𝗎 𝗌𝖺𝗃𝖺? 𝖲𝗂𝗇𝗂, 𝖻𝗂𝖺𝗋 𝑆𝑡𝑜𝑟𝑒 𝑏𝑦 𝑌𝑜𝑟𝑖𝑛𝑜𝑜𝑛𝑎 𝗆𝖾𝗇𝗀𝗁𝗂𝖺𝗌𝗇𝗒𝖺 𝗃𝖺𝖽𝗂 𝗌𝖾𝖼𝖺𝗇𝗍𝗂𝗄 𝗄𝖾𝗂𝗇𝗀𝗂𝗇𝖺𝗇𝗆𝗎! — 𝗌𝖾𝗂𝗇𝖽𝖺𝗁 𝗒𝖺𝗇𝗀 𝗁𝖺𝗇𝗒𝖺 𝖻𝗂𝗌𝖺 𝖽𝗂𝖻𝖺𝗒𝖺𝗇𝗀𝗄𝖺𝗇 𝖽𝗂 𝗇𝖾𝗀𝖾𝗋𝗂 𝗉𝖾𝗋𝗂</p>
+     <p> ╭━ׂ┄─  ℳi𝗇𝗂 𝓟ricelist 〯 ⵓ</p>
+۪  ░꯭    ֺ 𝖴𝖻𝖺𝗁 𝗌𝗁𝖺𝗉𝖾 : Rp.5OO
+<p>۪  ░꯭    ֺ 𝖴𝖻𝖺𝗁 𝗌𝗁𝖺𝗉𝖾 & 𝗐𝖺𝗋𝗇𝖺 : Rp.2.OOO</p>
+۪  ░꯭    ֺ 𝖣𝖾𝗌𝗂𝗀𝗇 𝗆𝖾𝗇𝗀𝗂𝗄𝗎𝗍𝗂 𝗍𝖾𝗆𝗉𝗅𝖺𝗍𝖾 : Rp.4.OOO
+<p>۪  ░꯭    ֺ 𝖣𝖾𝗌𝗂𝗀𝗇 𝖼𝗎𝗌𝗍𝗈𝗆 : start Rp.6.OOO</p>
+۪  ░꯭    ֺ 𝖨𝗇 𝗋𝗎𝗌𝗁 : +Rp.2.OOO
+
+      <div class="buttons">
+        <a href="https://t.me/yorinoonachannel/339" class="btn btn-order">Pesan Sekarang</a>
+        <a href="https://t.me/yorinoonachannel/339" class="btn btn-detail">Penjelasan Lengkap</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>📝 Edit Pamflet & Tugas</h3>
+       <img src="4.jpg" alt="Feeds Database">
+      <p>Desain pamflet, banner, atau tugas sekolah/kampus dengan rapi dan kreatif.</p>
+      <p>𝑩𝒊𝒔𝒂 𝒓𝒆𝒒𝒖𝒆𝒔𝒕:</p>
+
+  ⡾ 🍰 𝑫𝒆𝒔𝒊𝒈𝒏
+
+<p>𝙼𝚎𝚗𝚎𝚛𝚒𝚖𝚊 𝙴𝚍𝚒𝚝𝚒𝚗𝚐:</p>
+𝙿𝚘𝚜𝚝𝚎𝚛, 𝙿𝚊𝚖𝚏𝚕𝚎𝚝, 𝙸𝚗𝚏𝚘𝚐𝚛𝚊𝚏𝚒𝚜, 𝙱𝚊𝚗𝚗𝚎𝚛, 𝙳𝚎𝚜𝚊𝚒𝚗 𝙺𝚎𝚖𝚊𝚜𝚊𝚗
+<p>💸𝗳𝗲𝗲 𝘀𝘁𝗮𝗿𝘁 𝟱𝗸/𝗽𝗼𝘀𝘁𝗲r</p>
+      <div class="buttons">
+        <a href="https://t.me/yorinoonachannel/42?single" class="btn btn-order">Pesan Sekarang</a>
+        <a href="https://t.me/yorinoonachannel/42?single" class="btn btn-detail">Penjelasan Lengkap</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🖼️ Desktop Wallpaper Editing</h3>
+     <img src="5.jpg" alt="Feeds Database">
+      <p>𓈒  ◞♡° :   𝑭𝒂𝒊𝒓𝒚 𝑪𝒖𝒕𝒆 𝑫𝒆𝒔𝒌𝒕𝒐𝒑 𝑾𝒂𝒍𝒍𝒑𝒂𝒑𝒆𝒓  </p>
+     <p> Sebuah ruang manis untuk layar kecilmu —  </p>
+dipenuhi pesona vintage digital,  
+<p>melodi lembut, dan nuansa cherry blossom yang memikat.  </p>
+Semua disusun seperti catatan rahasia dari negeri peri ✉️
+<p>✧ Format HD, langsung pakai </p>
+ <p>✧ : ＩＤＲ ５.０００  </p>
+      <div class="buttons">
+        <a href="https://t.me/yorinoonachannel/49" class="btn btn-order">Pesan Sekarang</a>
+        <a href="https://t.me/yorinoonachannel/49" class="btn btn-detail">Penjelasan Lengkap</a>
+      </div>
+    </div>
+  <div class="card">
+      <h3>ෆ Jasa Edit Pricelist Apprem</h3>
+     <img src="7.jpg" alt="Feeds Database">
+      <p>╭━ׂ┄─  ℳi𝗇𝗂 𝓟ricelist 〯 ⵓ</p>
+۪  ░꯭    ֺ 𝖣𝖾𝗌𝗂𝗀𝗇 𝗆𝖾𝗇𝗀𝗂𝗄𝗎𝗍𝗂 𝗍𝖾𝗆𝗉𝗅𝖺𝗍𝖾 : Rp.4.OOO
+<p>  ░꯭    ֺ 𝖣𝖾𝗌𝗂𝗀𝗇 𝖼𝗎𝗌𝗍𝗈𝗆 : start Rp.6.OOO</p>۪
+۪  ░꯭    ֺ 𝖨𝗇 𝗋𝗎𝗌𝗁 : +Rp.2.OOO
+      <div class="buttons">
+        <a href="https://t.me/yorinoonachannel/236" class="btn btn-order">Pesan Sekarang</a>
+        <a href="https://t.me/yorinoonachannel/236" class="btn btn-detail">Penjelasan Lengkap</a>
+      </div>
+    </div>
+   <div class="card">
+      <h3>🧸 ˖ ࣪ ෆ KEBUTUHAN SOSMED</h3>
+     <img src="8.jpg" alt="Feeds Database">
+      <p>🧸 ˖ ࣪ ‹ 𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎 𝑵𝒆𝒆𝒅𝒔 𖥔 ࣪ ᥫ</p>
+      
+      <div class="buttons">
+       <a href="https://t.me/yorinoonachannel/133?comment=465" class="btn btn-order">♡⁺. 📝༶ Followers Instagram
+</a>
+        <a href="https://t.me/yorinoonachannel/133?comment=474" class="btn btn-order">♡⁺. 📝༶ Likes Instagram
+</a>
+         <a href="https://t.me/yorinoonachannel/133?comment=476" class="btn btn-order">♡⁺. 📝༶ Viewers Instagram
+</a>
+ <p>🧸 ˖ ࣪ ‹ 𝑻𝒊𝒌𝑻𝒐𝒌 𝑵𝒆𝒆𝒅𝒔 𖥔 ࣪ ᥫ</p>
+ <a href="https://t.me/yorinoonachannel/148?comment=468" class="btn btn-order">♡⁺. 📝༶ Followers TikTok
+</a>
+        <a href="https://t.me/yorinoonachannel/148?comment=470" class="btn btn-order">♡⁺. 📝༶ Likes TikTok
+</a>
+         <a href="https://t.me/yorinoonachannel/148?comment=472" class="btn btn-order">♡⁺. 📝༶ Viewers TikTok
+</a>
+<p>🧸 ˖ ࣪ ‹ 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑵𝒆𝒆𝒅𝒔 𖥔 ࣪ ᥫ</p>
+<a href="https://t.me/yorinoonachannel/246" class="btn btn-order">♡⁺. 📝༶ Pricelist
+</a>
+</div> </div>
+<div class="card">
+  <h3>💻 Jasa Edit Website</h3>
+  <img src="https://i.imgur.com/F2wnrpP.png" alt="Contoh Website Estetik">
+  <p>Bikin website kamu tampil <strong>estetik, responsive, dan siap pakai!</strong> Pilih sesuai kebutuhanmu di bawah ini:</p>
+  <div class="buttons">
+    <p>🌐 Website Database</p>
+    <a href="https://rablink.github.io/brofibusiness/" class="btn btn-detail" target="_blank">Contoh Website Database</a>
+    <p>🎀 Website Kebsos</p>
+    <a href="https://rablink.github.io/qii_foll_store/" class="btn btn-detail" target="_blank">Contoh Website Kebsos</a>
+    🛍️ Website Store
+    <a href="https://rablink.github.io/yorinoona_store/" class="btn btn-detail" target="_blank">Contoh Website Store</a>
+    
+   <a href="https://t.me/boobedoo" class="btn btn-detail" target="_blank">♡⁺. 📝PESAN SEKARANG</a></div>
+
+ 
+</div>
+
+   
+  </section> 
+  <h2 class="section-title">TESTIMONI</h2>
+<section class="testimonial-slider-horizontal">
+   
+  <div class="testimonial-track" id="testimonialTrack">
+    <img src="testimoni1.jpg" alt="Testimoni 1" />
+    <img src="testimoni2.jpg" alt="Testimoni 2" />
+    <img src="testimoni3.jpg" alt="Testimoni 3" />
+    <img src="testimoni4.jpg" alt="Testimoni 4" />
+    <img src="testimoni5.jpg" alt="Testimoni 5" />
+    <img src="testimoni6.jpg" alt="Testimoni 6" />
+    <img src="testimoni7.jpg" alt="Testimoni 7" />
+    <img src="testimoni8.jpg" alt="Testimoni 8" />
+  </div>
+</section>
+
+<section class="testimonial-banner">
+  <img src="6242006641818060071_121.jpg" alt="Testimoni Store by Yorinoona">
+</section>
+<section style="padding: 2rem; text-align: center;">
+  <h3 style="color: #d63384;">꒱ ˖ׄ 🦢 ୭ 𝚂𝚝𝚘𝚛𝚎 𝚋𝚢 𝚈𝚘𝚛𝚒𝚗𝚘𝚘𝚗𝚊'𝚜 𝙿𝚘𝚛𝚝𝚘𝚏𝚘𝚕𝚒o</h3>
+  <p>Lihat beberapa contoh desain yang sudah pernah kami kerjakan 💼</p>
+  
+  <a href="https://t.me/testijasdityorinoona" target="_blank"
+     style="display: inline-block; background: #d63384; color: white; padding: 0.75rem 1.5rem; border-radius: 10px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  𝚈𝚘𝚛𝚒𝚗𝚘𝚘𝚗𝚊'𝚜 𝙿𝚘𝚛𝚝𝚘𝚏𝚘𝚕𝚒o
+  </a>
+</section>
+
+<section class="why-us" style="padding:2rem; background:#e7c4d6; text-align:center;">
+  <h3 style="color:#d63384;">Kenapa Pilih Jasa Kami?</h3>
+  <p style="max-width:600px; margin:auto; font-size:0.95rem; color:#555;">✨ Kami bukan hanya menjual desain, tapi juga membantu kamu tampil estetik, rapi, dan profesional di mata customer. Semua bisa request custom sesuai gaya kamu!</p>
+  <ul style="list-style:none; padding:0; margin-top:1rem;">
+    <li>✅ Fast response & pengerjaan cepat</li>
+    <li>✅ Bisa request tema sesuai selera</li>
+    <li>✅ Harga hemat, hasil maksimal</li>
+    <li>✅ Ramah pemula & konsultasi bebas</li>
+  </ul>
+</section>
+
+  <script>
+  const testiTexts = [
+    "“Desainnya lucuu banget 😍 Thank you kak!”",
+    "“Bener-bener cepet dan hasilnya memuaskan 💯”",
+    "“Feed toko aku jadi makin estetik! ✨”",
+    "“Kakaknya ramah dan sabar banget 😭🩷”",
+    "“Pokoknya langganan terus deh!! 🛒🎀”"
+  ];
+
+  let testiIndex = 0;
+  const testiTextElement = document.getElementById("testiText");
+
+  setInterval(() => {
+    testiIndex = (testiIndex + 1) % testiTexts.length;
+    testiTextElement.innerText = testiTexts[testiIndex];
+  }, 4000); // Ganti setiap 4 detik
+</script>
+<script>
+  const track = document.getElementById('testimonialTrack');
+  const slides = track.children;
+  const totalSlides = slides.length;
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % totalSlides;
+    track.style.transform = `translateX(-${index * 250}px)`;
+  }, 3000); // ganti setiap 3 detik
+</script>
+
+</body>
+</html>
